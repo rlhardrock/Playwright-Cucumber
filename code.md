@@ -39,3 +39,12 @@ Inside that directory, you can run several commands:
 * Create the "id_test.feature" in folder features
 * write the scenaries
 * Create in root-project the "cucumber.json"
+* add the path in default
+* on package.json in scripts add: "test" : "cucumber-js test"
+
+## First Action
+    npm test
+
+* Create the "id_testSteps.ts" in folder steps
+* paste in "cucumber.json" in default "require": "source/test/steps/*.ts" (dir of the steps)
+* copy & paste results. clear the message inside the function

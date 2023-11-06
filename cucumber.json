@@ -1,4 +1,20 @@
 {
+     "default": {
+          "formatOptions": {
+               "snippetInterface": "async-await"
+          },
+          "paths": [
+               "source/tests/features/"
+          ],
+          "publishQuite": true,
+          "dryRun": true,
+          "require": [
+               "source/tests/steps/*.ts"
+          ],
+          "requireModule": [
+               "ts-node/register"
+          ]
+     },
      "compilerOptions": {
           "module": "commonjs",
           "target": "es5",
