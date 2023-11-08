@@ -33,18 +33,22 @@ Inside that directory, you can run several commands:
     npm install --save-dev ts-node 
 
 # Estructure of project
-* Create folder source/test/features
-* Create folder source/test/steps
+* Create folder src/features
+* Create folder src/stepDefinitions
 
 * Create the "id_test.feature" in folder features
 * write the scenaries
 * Create in root-project the "cucumber.json"
-* add the path in default
-* on package.json in scripts add: "test" : "cucumber-js test"
+* add the path in default and other configurations in cucumber.json
+* on "package.json" in scripts add: {"test" : "cucumber-js test"}
 
 ## First Action
     npm test
 
 * Create the "id_testSteps.ts" in folder steps
-* paste in "cucumber.json" in default "require": "source/test/steps/*.ts" (dir of the steps)
+* paste in "cucumber.json" in default "require": "src/stepDefinitions/*.ts" (dir of the steps)
 * copy & paste results. clear the message inside the function
+ 
+## import
+    import {Given, When, Then} from "@cucumber/cucumber";
+    import {chromium, Page, Browser} from "@playwright/test";
